@@ -1,0 +1,19 @@
+.icon {
+  font-size: 2rem;
+}
+
+.icons-container {
+  position: relative;
+  display: flex;
+  gap: 10px;
+}
+
+.copy-msg {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: var(--blue);
+  /* background-color: var(--blue); */
+  font-weight: 600;
+  white-space:nowrap;
+}

@@ -1,0 +1,23 @@
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav button {
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 5px;
+  border: none;
+}
+
+nav button:hover {
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  nav button {
+    font-size: 1.5rem;
+  }
+}
