@@ -6,6 +6,8 @@
   row-gap: 4rem;
   /* column-gap: 5px; */
   column-gap: 10px;
+  max-width: 1400px;
+  margin: auto;
 }
 
 @media screen and (max-width: 1024px) {

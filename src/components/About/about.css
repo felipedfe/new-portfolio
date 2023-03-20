@@ -2,6 +2,8 @@
   display: grid;
   grid-template-columns: 40% 60%;
   color: #fff;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .about--img-wrapper {
