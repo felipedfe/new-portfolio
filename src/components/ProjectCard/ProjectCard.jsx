@@ -6,20 +6,20 @@ function ProjectCard({ project }) {
   const { id, title, tags, alt, urls } = project;
   console.log(project);
   return (
-    <div key={id} className="projectcard--wrapper">
+    <div className="projectcard--wrapper">
       <div className="projectcard--hover-area">
         <div className="projectcard--hover-card">
           <h2 className="projectcard--hover-card-title">{title}</h2>
           {/* <hr className="projectcard--card-divider"></hr> */}
           <div className="projectcard--tags-wrapper">
-            {tags.map((tag) => <span className="tag-pill">{`${tag}`}</span>)}
+            {tags.map((tag) => <span key={tag} className="tag-pill">{`${tag}`}</span>)}
           </div>
           <ProjectLinks urls={urls} />
         </div>
       </div>
       <img
         className="projectcard--img"
-        src={`images/projects/${id}/thumb.jpg`}
+        src={process.env.PUBLIC_URL + `/images/projects/${id}/thumb.jpg`}
         alt={alt} />
     </div>
   )

@@ -7,7 +7,7 @@ function Projects() {
   return (
     <section id="projects" className="projects--container">
       {projects.map((project) => {
-        return <ProjectCard project={project} />
+        return <ProjectCard key={project.id} project={project} />
       })}
     </section>
   )

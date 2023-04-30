@@ -2,13 +2,14 @@ import React from 'react';
 import './about.css';
 
 function About() {
+  console.log(process.env.PUBLIC_URL)
   return (
     <section id="about" className="about--container">
       <div className="about--img-wrapper">
         <img
           className="about--img"
-          src="images/perfil-crop.jpg"
-          alt="um homem de barba e óculos em frente a uma estante de livros"
+          src={process.env.PUBLIC_URL + "/images/perfil-crop-2.jpg"}
+          alt="eu"
         />
       </div>
       <article className="about--text-wrapper">
