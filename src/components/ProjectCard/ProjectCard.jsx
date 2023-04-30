@@ -19,7 +19,7 @@ function ProjectCard({ project }) {
       </div>
       <img
         className="projectcard--img"
-        src={process.env.PUBLIC_URL + `/images/projects/${id}/thumb.jpg`}
+        src={`/images/projects/${id}/thumb.jpg`}
         alt={alt} />
     </div>
   )
